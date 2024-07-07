@@ -206,7 +206,7 @@ export declare const Notifications: DefineComponent<{
     dangerouslySetInnerHtml: boolean;
 }, SlotsType<{
     body?: ((props: {
-        class: HTMLAttributes['class'];
+        class: HTMLAttributes["class"];
         item: NotificationItem;
         close: () => void;
     }) => any) | undefined;
@@ -248,8 +248,3 @@ export declare const useNotification: () => {
 };
 
 export { }
-declare module '@vue/runtime-core' {
-    export interface ComponentCustomProperties {
-        $notify: typeof notify;
-    }
-}
