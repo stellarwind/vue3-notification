@@ -420,8 +420,10 @@ export default defineComponent({
                                                 />
                                             </>
                                         ) : (
-                                            <div class="notification-inner">
-                                                <i class="icon-class"></i>
+                                            <>
+                                                <i
+                                                    class={`icon-wrapper icon-image-${item.type}`}
+                                                ></i>
                                                 <div class="notification-text">
                                                     {item.title ? (
                                                         <div class="notification-title">
@@ -432,7 +434,7 @@ export default defineComponent({
                                                         {item.text}
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </>
                                         )}
                                     </div>
                                 )}
